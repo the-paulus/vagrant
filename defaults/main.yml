@@ -1,0 +1,15 @@
+---
+vagrant_install_manager: yes
+
+# For a full list of providers and plugins see: https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins
+vagrant_providers:
+  - vagrant-managed-servers
+
+vagrant_plugins:
+  - vagrant-vbguest
+  - vagrant-timezone
+  - vagrant-clean
+  - vagrant-landrush
+  - vagrant-compose
+
+vagrant_gentoo_use_flags: []

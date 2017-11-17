@@ -1,0 +1,7 @@
+---
+- name: Set USE flags
+  shell: "euse -E -p app-emulation/vagrant virtualbox"
+  
+- name: Install Vagrant
+  portage:
+    package: app-emulation/vagrant

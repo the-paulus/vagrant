@@ -1,0 +1,11 @@
+---
+- name: Include Setup Tasks
+  include_tasks: "Setup-{{ ansible_os_distribution }}.yml"
+
+- name: Install Providers
+  shell: "vagrant plugin install {{ item }}"
+  with_items: "{{ vagrant_providers }}"
+
+- name: Install Plugins
+  shell: "vagrant plugin install {{ item }}"
+  with_items: "{{ vagrant_plugins }}"

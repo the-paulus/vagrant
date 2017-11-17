@@ -1,0 +1,9 @@
+---
+- name: Install Vagrant
+  homebrew_cask:
+    name: vagrant
+
+- name: Install Vagrant Manager
+  homebrew_cask:
+    name: vagrant-manager
+  when: vagrant_install_manager
