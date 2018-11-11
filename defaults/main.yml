@@ -12,4 +12,44 @@ vagrant_plugins:
   - vagrant-landrush
   - vagrant-compose
 
+vagrant_boxes:
+  - box: debian/jessie64
+    provider: virtualbox
+  - box: debian/wheezy64
+    provider: virtualbox
+  - box: devopsgroup-io/windows_server-2012r2-standard-amd64-nocm
+    provider: virtualbox
+  - box: generic/arch
+    provider: virtualbox
+  - box: generic/centos6
+    provider: virtualbox
+  - box: generic/centos7
+    provider: virtualbox
+  - box: generic/debian8
+    provider: virtualbox
+  - box: generic/debian9
+    provider: virtualbox
+  - box: generic/fedora25
+    provider: virtualbox
+  - box: generic/fedora26
+    provider: virtualbox
+  - box: generic/fedora27
+    provider: virtualbox
+  - box: generic/gentoo
+    provider: virtualbox
+  - box: generic/rhel6
+    provider: virtualbox
+  - box: generic/rhel7
+    provider: virtualbox
+  - box: generic/ubuntu1604
+    provider: virtualbox
+  - box: StefanScherer/windows_2016_docker
+    provider: virtualbox
+  - box: ubuntu/precise64
+    provider: virtualbox
+  - box: ubuntu/trusty64
+    provider: virtualbox
+  - box: ubuntu/xenial64
+    provider: virtualbox
+
 vagrant_gentoo_use_flags: []

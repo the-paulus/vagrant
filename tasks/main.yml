@@ -9,3 +9,7 @@
 - name: Install Plugins
   shell: "vagrant plugin install {{ item }}"
   with_items: "{{ vagrant_plugins }}"
+
+- name: Add Vagrant Boxes
+  shell: "vagrant box add {{ item.box }} --provider {{ item.provider | default('virtualbox') }}"
+  with_items: "{{ vagrant_boxes }}"
